@@ -1,0 +1,11 @@
+[project]
+name = "atlas"
+version = "0.1.0"
+description = "Multi-tenant shard placement, hot-shard detection, and rebalance planning"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"

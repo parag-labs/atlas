@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+
+# Go
+*.exe
+
+# Rust
+target/
+Cargo.lock
+
+# .NET
+bin/
+obj/
+
+# Java
+target/
+*.class
+
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo

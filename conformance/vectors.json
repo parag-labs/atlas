@@ -1,0 +1,136 @@
+{
+  "_comment": "Atlas cross-language conformance vectors. See conformance/README.md.",
+  "slots": 16384,
+  "hash": {
+    "": "0xCBF29CE484222325",
+    "a": "0xAF63DC4C8601EC8C",
+    "foobar": "0x85944171F73967E8",
+    "tenant-0": "0xC2EFB028E3EBEED8",
+    "shard-0": "0x8AE48B73FA64ED46"
+  },
+  "shards": [
+    "shard-0",
+    "shard-1",
+    "shard-2",
+    "shard-3"
+  ],
+  "placement": {
+    "tenant-0": "shard-2",
+    "tenant-1": "shard-3",
+    "tenant-2": "shard-3",
+    "tenant-3": "shard-3",
+    "tenant-4": "shard-3",
+    "tenant-5": "shard-3",
+    "tenant-6": "shard-3",
+    "tenant-7": "shard-3",
+    "tenant-8": "shard-2",
+    "tenant-9": "shard-2",
+    "tenant-10": "shard-0",
+    "tenant-11": "shard-0",
+    "tenant-12": "shard-0",
+    "tenant-13": "shard-0",
+    "tenant-14": "shard-1",
+    "tenant-15": "shard-1",
+    "tenant-16": "shard-1",
+    "tenant-17": "shard-0",
+    "tenant-18": "shard-0",
+    "tenant-19": "shard-3",
+    "tenant-20": "shard-0",
+    "tenant-21": "shard-0",
+    "tenant-22": "shard-0",
+    "tenant-23": "shard-0",
+    "tenant-24": "shard-0",
+    "tenant-25": "shard-0",
+    "tenant-26": "shard-0",
+    "tenant-27": "shard-0",
+    "tenant-28": "shard-0",
+    "tenant-29": "shard-0",
+    "tenant-30": "shard-3",
+    "tenant-31": "shard-2",
+    "tenant-32": "shard-3",
+    "tenant-33": "shard-3",
+    "tenant-34": "shard-3",
+    "tenant-35": "shard-3",
+    "tenant-36": "shard-3",
+    "tenant-37": "shard-3",
+    "tenant-38": "shard-3",
+    "tenant-39": "shard-3"
+  },
+  "slot_for": {
+    "tenant-0": 11992,
+    "tenant-1": 12427,
+    "tenant-2": 12862,
+    "tenant-3": 13297,
+    "tenant-4": 13732,
+    "tenant-5": 14167,
+    "tenant-6": 14602,
+    "tenant-7": 15037,
+    "tenant-8": 8512,
+    "tenant-9": 8947,
+    "tenant-10": 3521,
+    "tenant-11": 3086,
+    "tenant-12": 2651,
+    "tenant-13": 2216,
+    "tenant-14": 5261,
+    "tenant-15": 4826,
+    "tenant-16": 4391,
+    "tenant-17": 3956,
+    "tenant-18": 41,
+    "tenant-19": 15990,
+    "tenant-20": 3530,
+    "tenant-21": 3965,
+    "tenant-22": 2660,
+    "tenant-23": 3095,
+    "tenant-24": 1790,
+    "tenant-25": 2225,
+    "tenant-26": 920,
+    "tenant-27": 1355,
+    "tenant-28": 50,
+    "tenant-29": 485,
+    "tenant-30": 12531,
+    "tenant-31": 12096,
+    "tenant-32": 13401,
+    "tenant-33": 12966,
+    "tenant-34": 14271,
+    "tenant-35": 13836,
+    "tenant-36": 15141,
+    "tenant-37": 14706,
+    "tenant-38": 16011,
+    "tenant-39": 15576
+  },
+  "hot": {
+    "load": {
+      "shard-0": 800,
+      "shard-1": 120,
+      "shard-2": 130,
+      "shard-3": 150
+    },
+    "overload_pct": 20,
+    "result": [
+      "shard-0"
+    ]
+  },
+  "rebalance": {
+    "load": {
+      "shard-0": 800,
+      "shard-1": 120,
+      "shard-2": 130,
+      "shard-3": 150
+    },
+    "overload_pct": 20,
+    "plan": [
+      {
+        "start": 3656,
+        "end": 3856,
+        "from": "shard-0",
+        "to": "shard-2"
+      },
+      {
+        "start": 3856,
+        "end": 4096,
+        "from": "shard-0",
+        "to": "shard-1"
+      }
+    ]
+  }
+}

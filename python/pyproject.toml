@@ -2,7 +2,7 @@
 name = "atlas"
 version = "0.1.0"
 description = "Multi-tenant shard placement, hot-shard detection, and rebalance planning"
-requires-python = ">=3.10"
+requires-python = ">=3.15"
 
 [tool.ruff]
 line-length = 100

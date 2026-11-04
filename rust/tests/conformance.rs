@@ -1,4 +1,4 @@
-use atlas::{fnv1a_64, hot_shards, plan_rebalance, slot_for, Move, ShardRouter};
+use atlas::{Move, ShardRouter, fnv1a_64, hot_shards, plan_rebalance, slot_for};
 use serde_json::Value;
 use std::collections::HashMap;
 use std::fs;

@@ -60,9 +60,9 @@ identical output. Details in [DESIGN.md](DESIGN.md) and
 
 | Language | Run | Conformance |
 |----------|-----|:-----------:|
-| Python | `cd python && PYTHONPATH=src pytest -q` | ✓ |
-| Go | `cd go && go test ./...` | ✓ |
-| Rust | `cd rust && cargo test` | ✓ |
+| Python (3.15+) | `cd python && PYTHONPATH=src pytest -q` | ✓ |
+| Go (1.27+) | `cd go && go test ./...` | ✓ |
+| Rust (1.99+, 2024 edition) | `cd rust && cargo test` | ✓ |
 | C# (.NET 10) | `cd csharp/tests && dotnet test` | ✓ |
 | Java (17+) | `cd java && mvn test` | ✓ |
 | TypeScript | `cd web && npm test` | ✓ |

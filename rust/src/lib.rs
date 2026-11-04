@@ -81,7 +81,7 @@ pub fn hot_shards(load: &HashMap<String, i64>, overload_pct: i64) -> Vec<String>
     let threshold_num = total * (100 + overload_pct);
     let mut hot: Vec<String> = load
         .iter()
-        .filter(|(_, &v)| v * 100 * n > threshold_num)
+        .filter(|&(_, &v)| v * 100 * n > threshold_num)
         .map(|(s, _)| s.clone())
         .collect();
     hot.sort_by(|a, b| load[b].cmp(&load[a]).then_with(|| a.cmp(b)));
@@ -143,11 +143,13 @@ pub fn plan_rebalance(
     moves.sort_by_key(|m| m.start);
     let mut coalesced: Vec<Move> = Vec::new();
     for m in moves {
-        if let Some(last) = coalesced.last_mut() {
-            if m.start == last.end && m.from == last.from && m.to == last.to {
-                last.end = m.end;
-                continue;
-            }
+        if let Some(last) = coalesced.last_mut()
+            && m.start == last.end
+            && m.from == last.from
+            && m.to == last.to
+        {
+            last.end = m.end;
+            continue;
         }
         coalesced.push(m);
     }

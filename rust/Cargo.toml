@@ -1,0 +1,13 @@
+[package]
+name = "atlas"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Multi-tenant shard placement, hot-shard detection, and rebalance planning"
+
+[lib]
+name = "atlas"
+path = "src/lib.rs"
+
+[dev-dependencies]
+serde_json = "1"

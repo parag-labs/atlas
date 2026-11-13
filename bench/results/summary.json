@@ -1,0 +1,9 @@
+{
+  "placement_per_sec": 300501,
+  "rebalance": {
+    "shards": 16,
+    "plan_moves": 3,
+    "slots_moved": 1024,
+    "plan_ms": 4.252
+  }
+}
